@@ -33,14 +33,7 @@ struct GameView: View {
                 Spacer()
                 HStack {
                     ForEach(0..<question.answerChoices.count) { indx in
-                        Text(question.answerChoices[indx])
-                            .padding(10)
-                            .font(.body)
-                            .bold()
-                            .border(gameColor.accentColor, width: 2)
-                            .foregroundColor(gameColor.accentColor)
-                            .multilineTextAlignment(.center)
-                        
+                        ChoiceText(choiceText: question.answerChoices[indx])
                     }
                 }
             }
