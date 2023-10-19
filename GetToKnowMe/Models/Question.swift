@@ -32,7 +32,7 @@ struct Question {
             correctAnswerIndx: 3
         ),
         Question(
-            questionText: "What is my favorite cat bread?",
+            questionText: "What is my favorite cat breed?",
             answerChoices: ["Russian Blue", "Munchkin", "Maine Coon", "Ragdoll"],
             correctAnswerIndx: 3
         ),
