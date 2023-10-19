@@ -55,10 +55,10 @@
 		7C9C3AC62ADC98010061ADD0 /* GetToKnowMe */ = {
 			isa = PBXGroup;
 			children = (
+				7C9C3ADC2AE0DC8D0061ADD0 /* ViewModels */,
+				7C9C3ADB2AE0DC6C0061ADD0 /* Models */,
+				7C9C3ADA2AE0DC5E0061ADD0 /* Views */,
 				7C9C3AC72ADC98010061ADD0 /* GetToKnowMeApp.swift */,
-				7C9C3AC92ADC98010061ADD0 /* GameView.swift */,
-				7C9C3AD82ADCA1EC0061ADD0 /* Question.swift */,
-				7C9C3AD62ADCA08F0061ADD0 /* GameColor.swift */,
 				7C9C3ACB2ADC98020061ADD0 /* Assets.xcassets */,
 				7C9C3ACD2ADC98020061ADD0 /* Preview Content */,
 			);
@@ -71,6 +71,30 @@
 				7C9C3ACE2ADC98020061ADD0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7C9C3ADA2AE0DC5E0061ADD0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C9C3AC92ADC98010061ADD0 /* GameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7C9C3ADB2AE0DC6C0061ADD0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C9C3AD62ADCA08F0061ADD0 /* GameColor.swift */,
+				7C9C3AD82ADCA1EC0061ADD0 /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7C9C3ADC2AE0DC8D0061ADD0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
