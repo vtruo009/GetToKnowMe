@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 struct GameColor {
-    let mainColor = Color(red: 242/255, green: 167/255, blue: 77/255)
+    @State var mainColor = Color(red: 242/255, green: 167/255, blue: 77/255)
     let accentColor = Color.black
+    let correctAnswer = Color.green
+    let wrongAnswer = Color.red
 }

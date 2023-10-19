@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ChoiceText: View {
+struct ChoiceTextView: View {
     
     let choiceText: String
     let gameColor = GameColor()
@@ -25,6 +25,6 @@ struct ChoiceText: View {
 
 struct ChoiceText_Previews: PreviewProvider {
     static var previews: some View {
-        ChoiceText(choiceText: "blue")
+        ChoiceTextView(choiceText: "blue")
     }
 }

@@ -9,16 +9,17 @@ import SwiftUI
 
 struct GameView: View {
     let gameColor = GameColor()
+    @State var mainColor = GameColor().mainColor
     
     let question: Question = Question(
         questionText: "What is my favorite color?",
-        answerChoices: ["Sunset Orange", "Regular Orange", "Neon Orange", "Tangerine"],
+        answerChoices: ["Sunset Orange", "Sunrise Orange", "Orange Orange", "Not Orange"],
         correctAnswerIndx: 0
     )
     
     var body: some View {
         ZStack {
-            gameColor.mainColor
+            mainColor
                 .ignoresSafeArea()
                 .opacity(0.65)
             VStack {
@@ -33,7 +34,12 @@ struct GameView: View {
                 Spacer()
                 HStack {
                     ForEach(0..<question.answerChoices.count) { indx in
-                        ChoiceText(choiceText: question.answerChoices[indx])
+                        Button(action: {
+                            print("You tapped on choice \(indx+1)")
+                            mainColor = indx == question.correctAnswerIndx ? .green : gameColor.wrongAnswer
+                        }, label: {
+                            ChoiceTextView(choiceText: question.answerChoices[indx])
+                        })
                     }
                 }
             }
