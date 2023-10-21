@@ -36,7 +36,7 @@ struct GameView: View {
                     ForEach(0..<question.answerChoices.count) { indx in
                         Button(action: {
                             print("You tapped on choice \(indx+1)")
-                            mainColor = indx == question.correctAnswerIndx ? .green : gameColor.wrongAnswer
+                            mainColor = indx == question.correctAnswerIndx ? gameColor.correctAnswer : gameColor.wrongAnswer
                         }, label: {
                             ChoiceTextView(choiceText: question.answerChoices[indx])
                         })

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Question {
+struct Question: Hashable {
     let questionText: String
     let answerChoices: [String]
     let correctAnswerIndx: Int
@@ -48,8 +48,8 @@ struct Question {
         ),
         Question(
             questionText: "Which of the following programming language did I first learn?",
-            answerChoices: ["Typescript", "C++", "Javascript", "Swift"],
-            correctAnswerIndx: 1
+            answerChoices: ["C++", "Typescript", "Javascript", "Swift"],
+            correctAnswerIndx: 0
         ),
         Question(
             questionText: "Which of the following programming language did I first learn?",
@@ -57,7 +57,7 @@ struct Question {
             correctAnswerIndx: 1
         ),
         Question(
-            questionText: "What is my favorite type of development?",
+            questionText: "What is my favorite sector of programming?",
             answerChoices: ["Web Development", "Game Development", "Android Development", "iOS Development"],
             correctAnswerIndx: 3
         ),
