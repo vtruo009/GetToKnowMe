@@ -47,13 +47,13 @@ struct Question: Hashable {
             correctAnswerIndx: 2
         ),
         Question(
-            questionText: "Which of the following programming language did I first learn?",
+            questionText: "What was my first programming language?",
             answerChoices: ["C++", "Typescript", "Javascript", "Swift"],
             correctAnswerIndx: 0
         ),
         Question(
-            questionText: "Which of the following programming language did I first learn?",
-            answerChoices: ["Typescript", "C++", "Javascript", "Swift"],
+            questionText: "What is my favorite sport?",
+            answerChoices: ["Soccer", "Badminton", "Tennis", "Baseball"],
             correctAnswerIndx: 1
         ),
         Question(
