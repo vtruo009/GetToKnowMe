@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GameView: View {
     let gameColor = GameColor()
+    @State var game = Game()
     @State var mainColor = GameColor().mainColor
     
     let question: Question = Question(
@@ -37,6 +38,9 @@ struct GameView: View {
                         Button(action: {
                             print("You tapped on choice \(indx+1)")
                             mainColor = indx == question.correctAnswerIndx ? gameColor.correctAnswer : gameColor.wrongAnswer
+                            game.makeGuessForCurrentQuestion(atIndex: indx)
+                            game.updateGameStatus()
+                            
                         }, label: {
                             ChoiceTextView(choiceText: question.answerChoices[indx])
                         })
