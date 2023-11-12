@@ -14,7 +14,7 @@ struct GameView: View {
     var body: some View {
         let currentQuestion = viewModel.currentQuestion
         ZStack {
-            GameColor.mainColor.ignoresSafeArea().opacity(0.65)
+            GameColor.mainColor.ignoresSafeArea()
             VStack {
                 Text("\(viewModel.questionProgressText)")
                     .font(.callout)
@@ -30,6 +30,7 @@ struct GameView: View {
                         Button(action: {
                             print("You tapped on choice \(indx+1)")
                             viewModel.makeGuess(atIndex: indx)
+                            viewModel.displayNextScreen()
                         }, label: {
                             ChoiceTextView(choiceText: currentQuestion.answerChoices[indx])
                                 .background(

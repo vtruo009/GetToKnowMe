@@ -23,11 +23,6 @@ struct ChoiceTextView: View {
 
 struct ChoiceText_Previews: PreviewProvider {
     static var previews: some View {
-        HStack {
-            ChoiceTextView(choiceText: "blue blue").background(.blue)
-            ChoiceTextView(choiceText: "blue blue").background(.blue)
-            ChoiceTextView(choiceText: "blue blue").background(.blue)
-            ChoiceTextView(choiceText: "blue blue").background(.blue)
-        }
+        ChoiceTextView(choiceText: "blue blue")
     }
 }
