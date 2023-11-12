@@ -1,6 +1,6 @@
 //
 //  GameViewModel.swift
-//  GetToKnowMe
+//  WhatAreWe
 //
 //  Created by Van Truong on 11/9/23.
 //

@@ -1,6 +1,6 @@
 //
 //  WelcomeView.swift
-//  GetToKnowMe
+//  WhatAreWe
 //
 //  Created by Van Truong on 11/11/23.
 //
@@ -26,7 +26,7 @@ struct WelcomeView: View {
                     NavigationLink(
                         destination: GameView(),
                         label: {
-                            Text("You tell me")
+                            Text("You tell me →")
                                 .padding()
                                 .font(.system(size: 50))
                                 .bold()

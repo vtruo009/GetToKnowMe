@@ -10,7 +10,7 @@
 		7C3034202AE0F7BF00E0CAB4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C30341F2AE0F7BF00E0CAB4 /* Game.swift */; };
 		7C3034222AFDEE3100E0CAB4 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3034212AFDEE3100E0CAB4 /* GameViewModel.swift */; };
 		7C3034242B007B2300E0CAB4 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3034232B007B2300E0CAB4 /* WelcomeView.swift */; };
-		7C9C3AC82ADC98010061ADD0 /* GetToKnowMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9C3AC72ADC98010061ADD0 /* GetToKnowMeApp.swift */; };
+		7C9C3AC82ADC98010061ADD0 /* WhatAreWeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9C3AC72ADC98010061ADD0 /* WhatAreWeApp.swift */; };
 		7C9C3ACA2ADC98010061ADD0 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9C3AC92ADC98010061ADD0 /* GameView.swift */; };
 		7C9C3ACC2ADC98020061ADD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9C3ACB2ADC98020061ADD0 /* Assets.xcassets */; };
 		7C9C3ACF2ADC98020061ADD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9C3ACE2ADC98020061ADD0 /* Preview Assets.xcassets */; };
@@ -23,8 +23,8 @@
 		7C30341F2AE0F7BF00E0CAB4 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		7C3034212AFDEE3100E0CAB4 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		7C3034232B007B2300E0CAB4 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		7C9C3AC42ADC98010061ADD0 /* GetToKnowMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetToKnowMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C9C3AC72ADC98010061ADD0 /* GetToKnowMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetToKnowMeApp.swift; sourceTree = "<group>"; };
+		7C9C3AC42ADC98010061ADD0 /* WhatAreWe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatAreWe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C9C3AC72ADC98010061ADD0 /* WhatAreWeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatAreWeApp.swift; sourceTree = "<group>"; };
 		7C9C3AC92ADC98010061ADD0 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		7C9C3ACB2ADC98020061ADD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C9C3ACE2ADC98020061ADD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		7C9C3ABB2ADC98010061ADD0 = {
 			isa = PBXGroup;
 			children = (
-				7C9C3AC62ADC98010061ADD0 /* GetToKnowMe */,
+				7C9C3AC62ADC98010061ADD0 /* WhatAreWe */,
 				7C9C3AC52ADC98010061ADD0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,22 +55,22 @@
 		7C9C3AC52ADC98010061ADD0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7C9C3AC42ADC98010061ADD0 /* GetToKnowMe.app */,
+				7C9C3AC42ADC98010061ADD0 /* WhatAreWe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7C9C3AC62ADC98010061ADD0 /* GetToKnowMe */ = {
+		7C9C3AC62ADC98010061ADD0 /* WhatAreWe */ = {
 			isa = PBXGroup;
 			children = (
 				7C9C3ADC2AE0DC8D0061ADD0 /* ViewModels */,
 				7C9C3ADB2AE0DC6C0061ADD0 /* Models */,
 				7C9C3ADA2AE0DC5E0061ADD0 /* Views */,
-				7C9C3AC72ADC98010061ADD0 /* GetToKnowMeApp.swift */,
+				7C9C3AC72ADC98010061ADD0 /* WhatAreWeApp.swift */,
 				7C9C3ACB2ADC98020061ADD0 /* Assets.xcassets */,
 				7C9C3ACD2ADC98020061ADD0 /* Preview Content */,
 			);
-			path = GetToKnowMe;
+			path = WhatAreWe;
 			sourceTree = "<group>";
 		};
 		7C9C3ACD2ADC98020061ADD0 /* Preview Content */ = {
@@ -112,9 +112,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7C9C3AC32ADC98010061ADD0 /* GetToKnowMe */ = {
+		7C9C3AC32ADC98010061ADD0 /* WhatAreWe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C9C3AD22ADC98020061ADD0 /* Build configuration list for PBXNativeTarget "GetToKnowMe" */;
+			buildConfigurationList = 7C9C3AD22ADC98020061ADD0 /* Build configuration list for PBXNativeTarget "WhatAreWe" */;
 			buildPhases = (
 				7C9C3AC02ADC98010061ADD0 /* Sources */,
 				7C9C3AC12ADC98010061ADD0 /* Frameworks */,
@@ -124,9 +124,9 @@
 			);
 			dependencies = (
 			);
-			name = GetToKnowMe;
+			name = WhatAreWe;
 			productName = GetToKnowMe;
-			productReference = 7C9C3AC42ADC98010061ADD0 /* GetToKnowMe.app */;
+			productReference = 7C9C3AC42ADC98010061ADD0 /* WhatAreWe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,7 +144,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7C9C3ABF2ADC98010061ADD0 /* Build configuration list for PBXProject "GetToKnowMe" */;
+			buildConfigurationList = 7C9C3ABF2ADC98010061ADD0 /* Build configuration list for PBXProject "WhatAreWe" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -157,7 +157,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7C9C3AC32ADC98010061ADD0 /* GetToKnowMe */,
+				7C9C3AC32ADC98010061ADD0 /* WhatAreWe */,
 			);
 		};
 /* End PBXProject section */
@@ -185,7 +185,7 @@
 				7C3034242B007B2300E0CAB4 /* WelcomeView.swift in Sources */,
 				7C9C3AD92ADCA1EC0061ADD0 /* Question.swift in Sources */,
 				7C9C3AD72ADCA08F0061ADD0 /* GameColor.swift in Sources */,
-				7C9C3AC82ADC98010061ADD0 /* GetToKnowMeApp.swift in Sources */,
+				7C9C3AC82ADC98010061ADD0 /* WhatAreWeApp.swift in Sources */,
 				7C3034222AFDEE3100E0CAB4 /* GameViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,7 +314,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GetToKnowMe/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WhatAreWe/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -342,7 +342,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"GetToKnowMe/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WhatAreWe/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -366,7 +366,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7C9C3ABF2ADC98010061ADD0 /* Build configuration list for PBXProject "GetToKnowMe" */ = {
+		7C9C3ABF2ADC98010061ADD0 /* Build configuration list for PBXProject "WhatAreWe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C9C3AD02ADC98020061ADD0 /* Debug */,
@@ -375,7 +375,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C9C3AD22ADC98020061ADD0 /* Build configuration list for PBXNativeTarget "GetToKnowMe" */ = {
+		7C9C3AD22ADC98020061ADD0 /* Build configuration list for PBXNativeTarget "WhatAreWe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7C9C3AD32ADC98020061ADD0 /* Debug */,

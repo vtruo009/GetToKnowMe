@@ -1,6 +1,6 @@
 //
 //  Colors.swift
-//  GetToKnowMe
+//  WhatAreWe
 //
 //  Created by Van Truong on 10/15/23.
 //
