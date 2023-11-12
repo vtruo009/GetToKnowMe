@@ -8,7 +8,7 @@
 import Foundation
 
 struct Game {
-    private let questions: [Question] = Question.questionBank.shuffled()
+    private let questions: [Question] = Question.questionBank
     private(set) var guesses = [Question: Int]()
     private(set) var currentQuestionIndex = 0
     private(set) var isOver = false

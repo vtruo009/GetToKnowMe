@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct WelcomeView: View {
-    let gameColor = GameColor()
-    
     var body: some View {
         NavigationView {
             ZStack {
-                gameColor.mainColor
+                GameColor.mainColor
                     .ignoresSafeArea()
                     .opacity(0.65)
                 VStack(alignment: .center, spacing: 0 ) {
@@ -30,8 +28,8 @@ struct WelcomeView: View {
                                 .padding()
                                 .font(.system(size: 50))
                                 .bold()
-                                .foregroundColor(gameColor.accentColor)
-                                .border(gameColor.accentColor, width: 5)
+                                .foregroundColor(GameColor.accentColor)
+                                .border(GameColor.accentColor, width: 5)
                                 .cornerRadius(10)
                         }
                     )

@@ -33,7 +33,7 @@ struct Question: Hashable {
         ),
         Question(
             questionText: "What is my favorite cat breed?",
-            answerChoices: ["Russian Blue", "Munchkin", "Maine Coon", "Ragdoll"],
+            answerChoices: ["Russian Blue", "Siberian", "Maine Coon", "Ragdoll"],
             correctAnswerIndx: 3
         ),
         Question(
@@ -43,7 +43,7 @@ struct Question: Hashable {
         ),
         Question(
             questionText: "What was my \"first dream car\"?",
-            answerChoices: ["BMW i8", "Range Rover", "Nissan Z", "G Wagon"],
+            answerChoices: ["BMW i8", "Range Rover", "Nissan Z", "Mercedes G Wagon"],
             correctAnswerIndx: 2
         ),
         Question(

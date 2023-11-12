@@ -8,41 +8,32 @@
 import SwiftUI
 
 struct GameView: View {
-    let gameColor = GameColor()
     @State var game = Game()
-    @State var mainColor = GameColor().mainColor
-    
-    let question: Question = Question(
-        questionText: "What is my favorite color?",
-        answerChoices: ["Sunset Orange", "Sunrise Orange", "Orange Orange", "Not Orange"],
-        correctAnswerIndx: 0
-    )
-    
+    @StateObject var viewModel = GameViewModel()
+        
     var body: some View {
+        let currentQuestion = viewModel.currentQuestion
         ZStack {
-            mainColor
-                .ignoresSafeArea()
-                .opacity(0.65)
+            GameColor.mainColor.ignoresSafeArea().opacity(0.65)
             VStack {
-                Text("1/5")
+                Text("\(viewModel.questionProgressText)")
                     .font(.callout)
                     .padding()
                     .multilineTextAlignment(.leading)
-                Text(question.questionText)
+                Text(currentQuestion.questionText)
                     .font(.largeTitle)
                     .multilineTextAlignment(.leading)
                     .bold()
                 Spacer()
                 HStack {
-                    ForEach(0..<question.answerChoices.count) { indx in
+                    ForEach(0..<currentQuestion.answerChoices.count) { indx in
                         Button(action: {
                             print("You tapped on choice \(indx+1)")
-                            mainColor = indx == question.correctAnswerIndx ? gameColor.correctAnswer : gameColor.wrongAnswer
-                            game.makeGuessForCurrentQuestion(atIndex: indx)
-                            game.updateGameStatus()
+                            viewModel.makeGuess(atIndex: indx)
+                            viewModel.color(forOptionIndex: indx)
                             
                         }, label: {
-                            ChoiceTextView(choiceText: question.answerChoices[indx])
+                            ChoiceTextView(choiceText: currentQuestion.answerChoices[indx])
                         })
                     }
                 }
@@ -54,5 +45,6 @@ struct GameView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         GameView()
+            .environmentObject(GameViewModel())
     }
 }
