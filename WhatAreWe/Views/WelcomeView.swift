@@ -13,7 +13,6 @@ struct WelcomeView: View {
             ZStack {
                 GameColor.mainColor
                     .ignoresSafeArea()
-                    .opacity(0.65)
                 VStack(alignment: .center, spacing: 0 ) {
                     Text("What are we? 🤨")
                         .font(.system(size: 65))

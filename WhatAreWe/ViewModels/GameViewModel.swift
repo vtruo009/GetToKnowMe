@@ -56,14 +56,14 @@ class GameViewModel: ObservableObject {
     func color(forOptionIndex optionIndex: Int) -> Color {
         if let guessedIndex = game.guesses[currentQuestion] {
             if guessedIndex != optionIndex {
-                return GameColor.mainColor.opacity(0.65)
+                return GameColor.mainColor
             } else if guessedIndex == currentQuestion.correctAnswerIndx {
                 return GameColor.correctAnswer
             } else {
                 return GameColor.wrongAnswer
             }
         } else {
-            return GameColor.mainColor.opacity(0.65)
+            return GameColor.mainColor
         }
     }
 }
