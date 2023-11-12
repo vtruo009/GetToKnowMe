@@ -30,14 +30,16 @@ struct GameView: View {
                         Button(action: {
                             print("You tapped on choice \(indx+1)")
                             viewModel.makeGuess(atIndex: indx)
-                            viewModel.color(forOptionIndex: indx)
-                            
                         }, label: {
                             ChoiceTextView(choiceText: currentQuestion.answerChoices[indx])
+                                .background(
+                                    viewModel.color(forOptionIndex: indx)
+                                )
                         })
                     }
                 }
-            }
+                .padding()
+            }.foregroundColor(GameColor.accentColor)
         }
     }
 }
