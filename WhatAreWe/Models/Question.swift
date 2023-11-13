@@ -14,17 +14,30 @@ struct Question: Hashable {
     let correctAnswerIndx: Int
     
     static let questionBank: [Question] = [
-        Question(questionText: "What is my favorite color?", answerChoices: ["Sunset Orange", "Sunrise Orange", "Orange Orange", "Not Orange"], correctAnswerIndx: 0
+        Question(
+            questionText: "What was my first programming language?",
+            answerChoices: ["C++", "Typescript", "Javascript", "Swift"],
+            correctAnswerIndx: 0
         ),
         Question(
-            questionText: "When is my birthday?",
-            answerChoices: ["June 16th", "January 30th", "April 14th", "December 23rd"],
-            correctAnswerIndx: 2
+            questionText: "What is my favorite color?",
+            answerChoices: ["Sunset Orange", "Sunrise Orange", "Orange Orange", "Not Orange"],
+            correctAnswerIndx: 0
+        ),
+        Question(
+            questionText: "What is my favorite sector of programming?",
+            answerChoices: ["Web Dev", "Game Dev", "Android Dev", "iOS Dev"],
+            correctAnswerIndx: 3
         ),
         Question(
             questionText: "Which of the following is a hobby of mine?",
             answerChoices: ["Knitting", "Brick building", "Gaming", "Cleaning"],
             correctAnswerIndx: 1
+        ),
+        Question(
+            questionText: "When is my birthday?",
+            answerChoices: ["June 16th", "January 30th", "April 14th", "December 23rd"],
+            correctAnswerIndx: 2
         ),
         Question(
             questionText: "What is my favorite dessert?",
@@ -47,19 +60,9 @@ struct Question: Hashable {
             correctAnswerIndx: 2
         ),
         Question(
-            questionText: "What was my first programming language?",
-            answerChoices: ["C++", "Typescript", "Javascript", "Swift"],
-            correctAnswerIndx: 0
-        ),
-        Question(
             questionText: "What is my favorite sport?",
             answerChoices: ["Soccer", "Badminton", "Tennis", "Baseball"],
             correctAnswerIndx: 1
-        ),
-        Question(
-            questionText: "What is my favorite sector of programming?",
-            answerChoices: ["Web Development", "Game Development", "Android Development", "iOS Development"],
-            correctAnswerIndx: 3
         ),
     ]
 }

@@ -12,7 +12,6 @@ struct GameView: View {
     @StateObject var viewModel = GameViewModel()
         
     var body: some View {
-        let currentQuestion = viewModel.currentQuestion
         ZStack {
             GameColor.mainColor.ignoresSafeArea()
             VStack {
@@ -20,27 +19,11 @@ struct GameView: View {
                     .font(.callout)
                     .padding()
                     .multilineTextAlignment(.leading)
-                Text(currentQuestion.questionText)
-                    .font(.largeTitle)
-                    .multilineTextAlignment(.leading)
-                    .bold()
-                Spacer()
-                HStack {
-                    ForEach(0..<currentQuestion.answerChoices.count) { indx in
-                        Button(action: {
-                            print("You tapped on choice \(indx+1)")
-                            viewModel.makeGuess(atIndex: indx)
-//                            viewModel.displayNextScreen()
-                        }, label: {
-                            ChoiceTextView(choiceText: currentQuestion.answerChoices[indx])
-                                .background(
-                                    viewModel.color(forOptionIndex: indx)
-                                )
-                        })
-                    }
-                }
-                .padding()
-            }.foregroundColor(GameColor.accentColor)
+                QuestionView(question: viewModel.currentQuestion)
+            }
+            .foregroundColor(GameColor.accentColor)
+            .navigationBarBackButtonHidden()
+            .environmentObject(viewModel)
         }
     }
 }
