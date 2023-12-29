@@ -12,7 +12,7 @@ As the player is going through the 10 question quiz, the numer of correct and in
 
 ## Architecture
 
-`What Are We? 🤨` is implemented using the Model-View-ViewModel (MVVM) design patter.
+`What Are We? 🤨` is implemented using the Model-View-ViewModel (MVVM) design pattern.
   * **Views** - responsible for formatting the buttons, displaying the question text, and the welcome screen
   * **Models** - house the game data, such as the question bank, the color scheme of the app, and the information needed to display to player
   * **View Models** - works as the brain of the game, where it knows what to re-render and display new information to the player based on the guess
