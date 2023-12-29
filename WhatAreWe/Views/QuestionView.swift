@@ -12,14 +12,13 @@ struct QuestionView: View {
     @EnvironmentObject var viewModel: GameViewModel
     
     var body: some View {
-        
         Text(question.questionText)
             .font(.largeTitle)
             .multilineTextAlignment(.leading)
             .bold()
         Spacer()
         HStack {
-            ForEach(0..<question.answerChoices.count) { indx in
+            ForEach(0..<question.answerChoices.count, id: \.self) { indx in
                 Button(action: {
                     print("You tapped on choice \(indx+1)")
                     viewModel.makeGuess(atIndex: indx)
@@ -41,11 +40,12 @@ struct QuestionView: View {
                         BottomTextView(str: "Next")
                     }
                 ).padding()
-            } else {
-                NavigationLink("") {
-                    ScoreView(viewModel: ScoreViewModel(correctGuesses: viewModel.correctGuesses, incorrectGuesses: viewModel.incorrectGuesses))
-                }
             }
+//            else {
+//                NavigationLink("") {
+//                    ScoreView(viewModel: ScoreViewModel(correctGuesses: viewModel.correctGuesses, incorrectGuesses: viewModel.incorrectGuesses))
+//                }
+//            }
         }
     }
 }

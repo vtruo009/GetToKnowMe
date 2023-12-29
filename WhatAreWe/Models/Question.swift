@@ -20,9 +20,14 @@ struct Question: Hashable {
             correctAnswerIndx: 0
         ),
         Question(
-            questionText: "What is my favorite color?",
-            answerChoices: ["Sunset Orange", "Sunrise Orange", "Orange Orange", "Not Orange"],
+            questionText: "I am a _____ person.",
+            answerChoices: ["Sunrise", "Sunset"],
             correctAnswerIndx: 0
+        ),
+        Question(
+            questionText: "What is my favorite color?",
+            answerChoices: ["Sunrise Orange", "Sunset Orange", "Orange Orange", "Not Orange"],
+            correctAnswerIndx: 1
         ),
         Question(
             questionText: "What is my favorite sector of programming?",
@@ -30,7 +35,7 @@ struct Question: Hashable {
             correctAnswerIndx: 3
         ),
         Question(
-            questionText: "Which of the following is a hobby of mine?",
+            questionText: "What is my hobby?",
             answerChoices: ["Knitting", "Brick building", "Gaming", "Cleaning"],
             correctAnswerIndx: 1
         ),
@@ -40,7 +45,7 @@ struct Question: Hashable {
             correctAnswerIndx: 2
         ),
         Question(
-            questionText: "What is my favorite dessert?",
+            questionText: "Favorite dessert?",
             answerChoices: ["Pumpkin Pie", "Ice Cream", "Cake", "Brownies"],
             correctAnswerIndx: 3
         ),
@@ -56,13 +61,17 @@ struct Question: Hashable {
         ),
         Question(
             questionText: "What was my \"first dream car\"?",
-            answerChoices: ["BMW i8", "Range Rover", "Nissan Z", "Mercedes G Wagon"],
+            answerChoices: ["BMW i8", "Range Rover", "Nissan Z", "G Wagon"],
             correctAnswerIndx: 2
         ),
         Question(
             questionText: "What is my favorite sport?",
-            answerChoices: ["Soccer", "Badminton", "Tennis", "Baseball"],
+            answerChoices: ["Badminton", "Soccer", "Tennis", "Baseball"],
             correctAnswerIndx: 1
         ),
+        Question(questionText: "My favorite Super Sentai (Power Rangers) series is _____",
+                 answerChoices: ["SPD", "Dino Thunder", "Wild Force", "Ninja Storm"],
+                 correctAnswerIndx: 2
+        )
     ]
 }

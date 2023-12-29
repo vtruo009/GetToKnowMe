@@ -23,6 +23,6 @@ struct ChoiceTextView: View {
 
 struct ChoiceText_Previews: PreviewProvider {
     static var previews: some View {
-        ChoiceTextView(choiceText: "blue blue")
+        ChoiceTextView(choiceText: "Abaranger (Dino Thunder)")
     }
 }
