@@ -32,14 +32,20 @@ struct QuestionView: View {
             }
         }
         if viewModel.guessWasMade {
-            Button(
-                action: {
-                    viewModel.displayNextScreen()
-                },
-                label: {
-                    NextButtonText(str: "Next")
+            if !viewModel.gameIsOver {
+                Button(
+                    action: {
+                        viewModel.displayNextScreen()
+                    },
+                    label: {
+                        BottomTextView(str: "Next")
+                    }
+                ).padding()
+            } else {
+                NavigationLink("") {
+                    ScoreView(viewModel: ScoreViewModel(correctGuesses: viewModel.correctGuesses, incorrectGuesses: viewModel.incorrectGuesses))
                 }
-            ).padding()
+            }
         }
     }
 }

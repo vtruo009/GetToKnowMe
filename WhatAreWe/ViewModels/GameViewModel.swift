@@ -52,7 +52,6 @@ class GameViewModel: ObservableObject {
         game.updateGameStatus()
     }
     
-    
     func color(forOptionIndex optionIndex: Int) -> Color {
         if let guessedIndex = game.guesses[currentQuestion] {
             if guessedIndex != optionIndex {

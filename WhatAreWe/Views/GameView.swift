@@ -22,15 +22,24 @@ struct GameView: View {
                 QuestionView(question: viewModel.currentQuestion)
             }
             .foregroundColor(GameColor.accentColor)
-            .navigationBarBackButtonHidden()
+            .navigationBarHidden(true)
             .environmentObject(viewModel)
         }
+        .background(
+            NavigationLink(destination: ScoreView(viewModel: ScoreViewModel(correctGuesses: viewModel.correctGuesses,
+                       incorrectGuesses: viewModel.incorrectGuesses)),
+                           isActive: .constant(viewModel.gameIsOver),
+                           label: { EmptyView() }
+                          )
+            )
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        GameView()
-            .environmentObject(GameViewModel())
+        NavigationStack {
+            GameView()
+                .environmentObject(GameViewModel())
+        }
     }
 }

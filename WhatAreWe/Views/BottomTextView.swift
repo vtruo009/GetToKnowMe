@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NextButtonText: View {
+struct BottomTextView: View {
     
     let str: String
     
@@ -25,8 +25,8 @@ struct NextButtonText: View {
     }
 }
 
-struct NextButtonText_Previews: PreviewProvider {
+struct BottomTextView_Previews: PreviewProvider {
     static var previews: some View {
-        NextButtonText(str: "Back")
+        BottomTextView(str: "Back")
     }
 }
